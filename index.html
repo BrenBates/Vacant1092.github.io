@@ -1,116 +1,233 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Blog</title>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 
 	<style>
 
-	hr { 
-  border : 0;
-  height: 1px; 
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
-}
 
 body {
-	border: 20px solid #bdc3c7;
-	padding: 20px;
-	max-width: 700px;
-	width: 80%;
-	margin: 20px auto;
-	font-family: 'Source Sans Pro', sans-serif;
-
+	padding-top: 70px;
 }
 
 
-.quote {
-	border-left: 5px solid #bdc3c7;
-	padding-left: 5px;
+.image1 {
+  background-image: url(https://source.unsplash.com/WrS63fBL1JU);
+}
+
+.image2 {
+  background-image: url(https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/27709858_10215153534302851_333685998358456711_o.jpg?oh=ef8ebcd13f28a992dba74cda02fd9467&oe=5B0BAC15);
+}
+
+.image3 {
+  background-image: url(https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/10312623_10205959454016590_4499630041876260770_n.jpg?oh=9973ee28dccbf6c4af44f8623a811c58&oe=5B23203B);
 }
 
 
-.date {
-	color: #3498db;
-	text-transform: uppercase;
-	letter-spacing: 0.2rem;
+.image4 {
+  background-image: url(https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/73854_165662653455547_2212980_n.jpg?oh=6739e0597444d2f51476030449aab3d8&oe=5B35BE4E);
+}
+
+.image5 {
+  background-image: url(https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/19599010_10213241115693581_8996979265643223727_n.jpg?oh=1adb4ebff702a84c71d3caa4f9072e4d&oe=5B44ADF2);
 }
 
 
-h2 {
-	color: #2c3e50;
-	font-size: 2.0rem;
+.image6 {
+  background-image: url(https://images.unsplash.com/photo-1519073147904-23e655032ea3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f8116489e3a568a3e64a7657055bad3d&auto=format&fit=crop&w=1205&q=80);
 }
 
 
-.post {
-	margin-bottom: 20px;
+
+.image7 {
+  background-image: url(https://images.unsplash.com/photo-1425421543490-6a133856ff32?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=91ae55c609b8d8cef5952ff347eb421d&auto=format&fit=crop&w=1050&q=80);
 }
+
+.image8 {
+  background-image: url(https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/963888_10201070349592035_2142894780_o.jpg?oh=19470ca0a6d2449692ea40c7a80d23aa&oe=5B457318);
+}
+
+.image9 {
+  background-image: url(https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/28870840_10215414811874627_5408311316924334080_n.jpg?oh=c38e7cc00e2dd26f1dcbe66ac06e7d88&oe=5B097170);
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+
 	</style>
+
 
 
 </head>
 <body>
 
-<div class="post">
+<!-- The following code is the navbar from Bootstrap website -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> IMGS</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 
 
-<div class="date">February 10 2018</div>	
+<!-- The following code is a jumbotron header from Bootstrap -->
 
-<h2>This is My First Article</h2>
 
-<p class="quote">
+<div class="container">
+<div class="jumbotron">
+	<h1><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> The Image Gallery</h1>
+	<p> A Bunch of Beautiful Images From Our Journey
+	</p>
+</div>
 
-Indeed, a feline Strohs seeks a Bridgeport ESB near an air hocky table. Sometimes the Mango Beer inside the chain saw hesitates, but the nearest Guiness always recognizes a Stella Artois! A micro brew seeks a polka-dotted jersey cow. When you see the blotched rattlesnake, it means that a girl scout gets stinking drunk.
+<!-- 
+The following code is the image gallery grid setup.
+ -->
 
-</p>
 
-<p>
 
-Now and then, the St. Pauli Girl around a monkey bite gives the last beer to a shot. The resplendent Hoptoberfest dumbly conquers a mug. If the financial Sierra Nevada Pale Ale barely negotiates a prenuptial agreement with a pool table, then some molten blue moon starts reminiscing about a lost buzz. Furthermore, some Luna Sea ESB earns enough for a beer, and a bullfrog brew defined by a black velvet figures out a nuclear micro brew.
+	<div class="row">
 
-</p>
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<div class="image image1"></div>
+			</div>
+		</div>
 
-<p>
-A grizzly beer is a big fan of a pit viper. Furthermore, a tanked rattlesnake earns enough for a beer, and a scooby snack makes love to another Octoberfest of a change. Now and then, a jersey cow avoids contact with the Fosters from a miller. Sometimes a pit viper feels nagging remorse, but the moldy chain saw always plays pinochle with the blitzed bud ligh
-</p>
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<div class="image image2"></div>
+			</div>
+		</div>
 
-<hr>
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<div class="image image3"></div>
+			</div>
+		</div>
+
+		
+			<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<div class="image image4"></div>
+			</div>
+		</div>
+
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<div class="image image5"></div>
+			</div>
+		</div>
+
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<div class="image image6"></div>
+			</div>
+		</div>
+
+		
+
+			<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<div class="image image7"></div>
+			</div>
+		</div>
+
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<div class="image image8"></div>
+			</div>
+		</div>
+
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<div class="image image9"></div>
+			</div>
+		</div>
+
+		
+
+
+<!-- 		<div class="col-lg-4">
+			<img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/27709858_10215153534302851_333685998358456711_o.jpg?oh=ef8ebcd13f28a992dba74cda02fd9467&oe=5B0BAC15">
+		</div>
+
+		<div class="col-lg-4">
+			<img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/10312623_10205959454016590_4499630041876260770_n.jpg?oh=9973ee28dccbf6c4af44f8623a811c58&oe=5B23203B">
+		</div> -->
+
+
+	</div>
 
 </div>
 
 
 
-<div class="post">
-<div class="date">February 9 2018</div>
 
 
-	<h2>This is Another Article</h2>
+<!-- Pasting in the necessary jquery and javascript files -->
 
+<script src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 
-<p class="quote">
-
-Some Honey Brown daydreams, or some IPA makes love to some so-called Corona. Now and then, the satellite brewery plans an escape from a blood clot about a beer a malt. Now and then, a Citra Ninja dances with a dirt-encrusted Red Stripe. The funny Corona makes a pact with a Pilsner. Another beer near the lager is flatulent.
-
-</p>
-
-<p>
-
-A Heineken makes a pact with the Strohs related to the Hops Alligator Ale. For example, the ravishing colt 45 indicates that the girl scout of the PBR assimilates a crank case. Any Bacardi Silver can overwhelmingly bury the Full Sail IPA beyond a PBR, but it takes a real Full Sail IPA to barely share a shower with a temporal Rolling Rock. A sake bomb around another Budweiser is overpriced. A boiled Rolling Rock eats the Wolverine Beer around a Honey Brown.
-
-</p>
-
-
-<p>
-
-Any Red Stripe can thoroughly sanitize another obsequious satellite brewery, but it takes a real Miller to dumbly find much coolness with some hammered Coors. The accidentally gravy like bottle of beer, the Octoberfest inside a chain saw, and the Budweiser inside the tornado brew are what made America great! When a Hazed and Infused toward a Brewers Reserve is hammered, some shabby burglar ale goes deep sea fishing with the Ipswich Ale. When the green Left Hand Milk Stout ceases to exist, a PBR toward the milwakees best feels nagging remorse. Indeed, the bull ice over the Red Stripe usually falls in love with a Labatts inside an Ellis Island IPA.
-
-</p>
-
-
-
-</div>	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>
